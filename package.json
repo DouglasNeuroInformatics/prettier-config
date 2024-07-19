@@ -1,0 +1,68 @@
+{
+  "name": "@douglasneuroinformatics/prettier-config",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@9.3.0",
+  "description": "Prettier configuration for DNP projects",
+  "author": "Joshua Unrau",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/DouglasNeuroInformatics/prettier-config/#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DouglasNeuroInformatics/prettier-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DouglasNeuroInformatics/prettier-config/issues"
+  },
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "bin": {
+    "prettier-pre-commit": "./bin/prettier-pre-commit"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "format": "prettier --write src",
+    "prepare": "husky"
+  },
+  "peerDependencies": {
+    "husky": "9.x",
+    "prettier": "3.x",
+    "prettier-plugin-astro": "0.x",
+    "prettier-plugin-svelte": "3.x",
+    "prettier-plugin-tailwindcss": "0.x"
+  },
+  "peerDependenciesMeta": {
+    "husky": {
+      "optional": true
+    },
+    "prettier-plugin-astro": {
+      "optional": true
+    },
+    "prettier-plugin-svelte": {
+      "optional": true
+    },
+    "prettier-plugin-tailwindcss": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@douglasneuroinformatics/eslint-config": "^4.2.2",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
