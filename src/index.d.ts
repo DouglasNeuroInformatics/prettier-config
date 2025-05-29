@@ -4,6 +4,7 @@ export type PrettierConfig = {
 
 export type Options = {
   astro?: boolean;
+  customPlugins?: string[];
   svelte?: boolean;
   tailwindcss?: boolean;
 };

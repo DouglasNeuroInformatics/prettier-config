@@ -10,7 +10,7 @@ export function createConfig(options) {
   /** @type {PrettierConfig & { plugins: any[], overrides: any[] }} */
   const config = {
     overrides: [],
-    plugins: [],
+    plugins: options?.customPlugins ?? [],
     printWidth: 120,
     singleQuote: true,
     trailingComma: 'none'
