@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.0](https://github.com/DouglasNeuroInformatics/prettier-config/compare/v0.2.0...v0.3.0) (2025-05-29)
+
+### Features
+
+* merge custom options ([919f2e9](https://github.com/DouglasNeuroInformatics/prettier-config/commit/919f2e9bb2c5854863d3982afb702f5e1b4b2f1d))
+
 ## [0.2.0](https://github.com/DouglasNeuroInformatics/prettier-config/compare/v0.1.1...v0.2.0) (2025-05-29)
 
 ### Features
