@@ -1,12 +1,9 @@
-export type PrettierConfig = {
-  overrides?: any[];
-} & import('prettier').Options;
+export type PrettierConfig = import('prettier').Config;
 
 export type Options = {
   astro?: boolean;
-  customPlugins?: string[];
   svelte?: boolean;
   tailwindcss?: boolean;
-};
+} & import('prettier').Options;
 
 export function createConfig(options?: Options): PrettierConfig;

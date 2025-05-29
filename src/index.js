@@ -1,3 +1,5 @@
+// @ts-check
+
 /** @typedef {import('./index.d.ts').PrettierConfig} PrettierConfig */
 /** @typedef {import('./index.d.ts').Options} Options */
 
@@ -6,24 +8,25 @@
  * @param {Options} [options]
  * @returns {PrettierConfig}
  */
-export function createConfig(options) {
+export function createConfig({ astro, plugins, svelte, tailwindcss, ...options } = {}) {
   /** @type {PrettierConfig & { plugins: any[], overrides: any[] }} */
   const config = {
     overrides: [],
-    plugins: options?.customPlugins ?? [],
+    plugins: plugins ?? [],
     printWidth: 120,
     singleQuote: true,
-    trailingComma: 'none'
+    trailingComma: 'none',
+    ...options
   };
-  if (options?.astro) {
+  if (astro) {
     config.plugins.push('prettier-plugin-astro');
     config.overrides.push({ files: '*.astro', options: { parser: 'astro' } });
   }
-  if (options?.svelte) {
+  if (svelte) {
     config.plugins.push('prettier-plugin-svelte');
     config.overrides.push({ files: '*.svelte', options: { parser: 'svelte' } });
   }
-  if (options?.tailwindcss) {
+  if (tailwindcss) {
     config.plugins.push('prettier-plugin-tailwindcss');
   }
   return config;
