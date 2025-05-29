@@ -53,9 +53,6 @@
       "optional": true
     }
   },
-  "dependencies": {
-    "prettier-plugin-css-order": "^2.1.2"
-  },
   "devDependencies": {
     "@douglasneuroinformatics/eslint-config": "^5.2.4",
     "@douglasneuroinformatics/semantic-release": "^0.2.1",
