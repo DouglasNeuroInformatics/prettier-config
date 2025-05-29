@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.1](https://github.com/DouglasNeuroInformatics/prettier-config/compare/v0.1.0...v0.1.1) (2025-05-29)
+
+### Bug Fixes
+
+* revert "feat: add prettier-plugin-css-order" ([ae11757](https://github.com/DouglasNeuroInformatics/prettier-config/commit/ae11757022e7288c8eb0e23d2c93d8358894db8d))
+
 ## [0.1.0](https://github.com/DouglasNeuroInformatics/prettier-config/compare/v0.0.2...v0.1.0) (2025-05-29)
 
 ### Features
