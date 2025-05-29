@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.0](https://github.com/DouglasNeuroInformatics/prettier-config/compare/v0.1.1...v0.2.0) (2025-05-29)
+
+### Features
+
+* add customPlugins option ([923c116](https://github.com/DouglasNeuroInformatics/prettier-config/commit/923c116e45911d6ef09f2b31d1de9d8ac77cdbc7))
+
 ## [0.1.1](https://github.com/DouglasNeuroInformatics/prettier-config/compare/v0.1.0...v0.1.1) (2025-05-29)
 
 ### Bug Fixes
