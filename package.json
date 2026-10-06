@@ -1,7 +1,7 @@
 {
   "name": "@douglasneuroinformatics/prettier-config",
   "type": "module",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "packageManager": "pnpm@11.8.0",
   "description": "Prettier configuration for DNP projects",
   "author": "Joshua Unrau",

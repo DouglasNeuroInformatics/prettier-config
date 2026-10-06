@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.4.0](https://github.com/DouglasNeuroInformatics/prettier-config/compare/v0.3.0...v0.4.0) (2026-10-06)
+
+### Features
+
+* support prettier-plugin-astro 1.x ([d3078e1](https://github.com/DouglasNeuroInformatics/prettier-config/commit/d3078e13cb749a6cf47e41744c10bde120f729ad))
+
+### Bug Fixes
+
+* update @douglasneuroinformatics/semantic-release to 0.2.2 ([682e4c2](https://github.com/DouglasNeuroInformatics/prettier-config/commit/682e4c2fb255137a3e830224a5b1af8c2d6d515d))
+
 ## [0.3.0](https://github.com/DouglasNeuroInformatics/prettier-config/compare/v0.2.0...v0.3.0) (2025-05-29)
 
 ### Features
