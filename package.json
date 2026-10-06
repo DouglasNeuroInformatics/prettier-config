@@ -35,7 +35,7 @@
   "peerDependencies": {
     "husky": "9.x",
     "prettier": "3.x",
-    "prettier-plugin-astro": "0.x",
+    "prettier-plugin-astro": "0.x || 1.x",
     "prettier-plugin-svelte": "3.x",
     "prettier-plugin-tailwindcss": "0.x"
   },
@@ -59,7 +59,7 @@
     "@douglasneuroinformatics/tsconfig": "^1.0.2",
     "eslint": "^9.20.1",
     "husky": "^9.1.7",
-    "prettier": "^3.5.1"
+    "prettier": "^3.5.3"
   },
   "commitlint": {
     "extends": [
