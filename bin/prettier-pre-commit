@@ -1,12 +1,11 @@
 #!/bin/sh
 
-STAGED_FILES=$(mktemp)
-trap 'rm -f "$STAGED_FILES"' EXIT
-
-git diff --cached --name-only --diff-filter=ACMR -z > "$STAGED_FILES"
+# Nothing to do if no added/copied/modified/renamed files are staged
+git diff --cached --quiet --diff-filter=ACMR && exit 0
 
 # Prettify all selected files
-xargs -0 pnpm exec prettier --ignore-unknown --write < "$STAGED_FILES"
+git diff --cached --name-only --diff-filter=ACMR -z | xargs -0 pnpm exec prettier --ignore-unknown --write
 
-# Add back the modified/prettified files to staging
-xargs -0 git add < "$STAGED_FILES"
+# Add back the modified/prettified files to staging (prettier only touches the
+# working tree, so the staged file list is unchanged from above)
+git diff --cached --name-only --diff-filter=ACMR -z | xargs -0 git add
